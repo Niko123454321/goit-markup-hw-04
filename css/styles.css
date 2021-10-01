@@ -152,7 +152,16 @@ body {
   margin-left: auto;
 }
 
-.contact {
+.contact .envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.contact .smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .contact .item + .item {
@@ -296,6 +305,20 @@ body {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.feachers-svg-bg {
+  display: flex;
+  padding: 0;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+
+.feachers-svg {
+  width: 70px;
+  height: 70px;
 }
 
 .features-item .title {

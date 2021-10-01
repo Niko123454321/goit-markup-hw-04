@@ -1,0 +1,10 @@
+.ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.actions {
+  width: 43px;
+  height: 32px;
+}
