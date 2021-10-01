@@ -9,6 +9,7 @@
   --box-buck-color: #f5f4fa;
   --border: #ececec;
   --border-projecc: #eeeeee;
+  --linear-gradient: rgba(47, 48, 58, 0.8);
 
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -151,6 +152,9 @@ body {
   margin-left: auto;
 }
 
+.contact {
+}
+
 .contact .item + .item {
   margin-left: 50px;
 }
@@ -171,6 +175,22 @@ body {
   background-color: var(--hiro-text-buck-color);
   letter-spacing: 0.06em;
   text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+    to right,
+    var(--linear-gradient),
+    var(--linear-gradient)
+  );
+  background-image: url(../images/icons.svg/Img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-text .text {
