@@ -27,8 +27,14 @@
                 </ul>
             </nav>
             <ul class="contact list">
-                <li class="item"><a href="mailto:info@example.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li class="item"><svg class="envelope ictions">
+                        <use href="./images/icons.svg/symbol-defs.svg#icon-envelope-1">
+                        </use>
+                    </svg><a href="mailto:info@example.com" class="link">info@devstudio.com</a></li>
+                <li class="item"><svg class="smartphone">
+                        <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone">
+                        </use>
+                    </svg><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -148,21 +154,43 @@
     <!--футер-->
     <footer class="footer">
         <div class="container">
-
-            <a href="./index.html" class="footer-logo">Web<span class="accent">Studio</span></a>
-            <address class="address">
-                <ul class="footer-contact list">
-                    <li class="item">
-                        <a href="" class="link-accent">Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li class="item">
-                        <a href="mailto:info@example.com" class="link">info@example.com</a>
-                    </li>
-                    <li class="item">
-                        <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-                    </li>
+            <div class="footer-box">
+                <a href="./index.html" class="footer-logo">Web<span class="accent">Studio</span></a>
+                <address class="address">
+                    <ul class="footer-contact list">
+                        <li class="item">
+                            <a href="" class="link-accent">Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="item">
+                            <a href="mailto:info@example.com" class="link">info@example.com</a>
+                        </li>
+                        <li class="item">
+                            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-box">
+                <h2 class="footer-text">присоедняйтесь</h2>
+                <ul class="footer-join  footer-card-set">
+                    <li class="footer-join-list"><svg class="footer-svg">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-instagram" width="20" height="20"
+                                class="footer-join-svg" <rect x="12" y="12" />></use>
+                        </svg></li>
+                    <li class="footer-join-list"><svg class="footer-svg">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-twitter" width="20" height="20"
+                                class="footer-join-svg" <rect x="12" y="12" />></use>
+                        </svg></li>
+                    <li class="footer-join-list"><svg class="footer-svg">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-facebook" width="20" height="20"
+                                class="footer-join-svg" <rect x="12" y="12" />></use>
+                        </svg></li>
+                    <li class="footer-join-list"><svg class="footer-svg">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin" width="20" height="20"
+                                class="footer-join-svg" <rect x="12" y="12" />></use>
+                        </svg></li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>

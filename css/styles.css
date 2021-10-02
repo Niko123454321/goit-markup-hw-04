@@ -11,6 +11,7 @@
   --border-projecc: #eeeeee;
   --linear-gradient: rgba(47, 48, 58, 0.8);
   --footer-svg: rgba(255, 255, 255, 0.1);
+  --box-svg: #afb1b8;
 
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -314,7 +315,7 @@ body {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--box-buck-color);
 }
 
 .feachers-svg {
@@ -412,6 +413,44 @@ body {
   color: var(--primary-text-color);
 }
 
+.box-svg {
+  fill: var(--box-svg);
+  margin-left: 10px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+}
+
+.box-join-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.box-svg:hover,
+.box-svg:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
+.box-join {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 270px;
+  padding: 0;
+  margin: 0;
+}
+
+.box-join-list:not(:last-child) {
+  flex-basis: calc(100% / 4 - 10px);
+}
+
 /* footer */
 
 .footer {
@@ -481,6 +520,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
+  cursor: pointer;
   width: 44px;
   height: 44px;
   background-color: var(--footer-svg);
