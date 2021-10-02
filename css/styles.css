@@ -375,7 +375,7 @@ body {
   background-color: var(--box-buck-color);
 }
 
-.box .box-caption {
+.box-caption {
   margin-bottom: 50px;
   text-align: center;
   font-size: 42px;
@@ -449,6 +449,32 @@ body {
 
 .box-join-list:not(:last-child) {
   flex-basis: calc(100% / 4 - 10px);
+}
+
+/* постоянные клиенты */
+
+.clients {
+  display: flex;
+  cursor: pointer;
+}
+
+.clients .item + .item {
+  margin-left: 30px;
+}
+
+.clients-list {
+  cursor: pointer;
+  width: 170px;
+  height: 91px;
+  fill: var(--box-svg);
+  border-radius: 4px;
+  border: 1px solid var(--box-svg);
+}
+
+.clients-list:hover,
+.clients-list:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* footer */
