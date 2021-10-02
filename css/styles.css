@@ -10,6 +10,7 @@
   --border: #ececec;
   --border-projecc: #eeeeee;
   --linear-gradient: rgba(47, 48, 58, 0.8);
+  --footer-svg: rgba(255, 255, 255, 0.1);
 
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -317,8 +318,7 @@ body {
 }
 
 .feachers-svg {
-  width: 70px;
-  height: 70px;
+  object-position: center;
 }
 
 .features-item .title {
@@ -420,6 +420,10 @@ body {
   background: var(--footer-buck-color);
 }
 
+.footer .container {
+  display: flex;
+}
+
 .footer-contact .item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -463,4 +467,54 @@ body {
 .footer-contact .link-accent {
   text-decoration: none;
   color: var(--primary-white-color);
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer-svg {
+  margin-left: 10px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  background-color: var(--footer-svg);
+  border-radius: 50%;
+}
+
+.footer-svg:hover,
+.footer-svg:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-join {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 270px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-join-list {
+  flex-basis: calc(100% / 4);
+  margin-top: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-join-svg {
+  fill: var(--primary-white-color);
+  width: 20px;
+  height: 20px;
+}
+
+.footer-box {
+  width: 300px;
 }
