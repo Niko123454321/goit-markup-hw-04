@@ -192,11 +192,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
-    to right,
-    var(--linear-gradient),
-    var(--linear-gradient)
-  );
-  background-image: url(../images/icons.svg/Img.jpg);
+      to right,
+      var(--linear-gradient),
+      var(--linear-gradient)
+    ),
+    url(../images/icons.svg/Img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
