@@ -12,6 +12,8 @@
   --linear-gradient: rgba(47, 48, 58, 0.8);
   --footer-svg: rgba(255, 255, 255, 0.1);
   --box-svg: #afb1b8;
+  --project-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -151,8 +153,8 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus,
-.contact .item:hover,
-.contact .item:focus {
+.contact .link:hover,
+.contact .link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -177,6 +179,8 @@ body {
   font-weight: 500;
   line-height: 110%;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
 .hero-text {
@@ -253,7 +257,7 @@ body {
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
-
+  line-height: 1.62;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -272,6 +276,11 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: var(--project-shadow);
 }
 
 .project-title {
@@ -309,17 +318,24 @@ body {
   margin-top: 30px;
 }
 
-.feachers-svg-bg {
+.features-item .title {
+  margin-top: 30px;
+}
+
+.features-svg-bg {
   display: flex;
-  padding: 0;
-  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   background-color: var(--box-buck-color);
 }
 
 .feachers-svg {
-  object-position: center;
+  padding: 0;
+
+  width: 70px;
+  height: 70px;
 }
 
 .features-item .title {
@@ -413,26 +429,26 @@ body {
   color: var(--primary-text-color);
 }
 
-.box-svg {
-  fill: var(--box-svg);
-  margin-left: 10px;
+.box-join .link {
   display: flex;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  width: 44px;
-  height: 44px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--box-svg);
   background-color: var(--primary-white-color);
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
 }
 
-.box-join-svg {
+.box-svg {
+  display: flex;
+  cursor: pointer;
   width: 20px;
   height: 20px;
 }
 
-.box-svg:hover,
-.box-svg:focus {
+.box-join .link:hover,
+.box-join .link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
@@ -443,12 +459,10 @@ body {
   justify-content: center;
 
   width: 270px;
-  padding: 0;
-  margin: 0;
 }
 
 .box-join-list:not(:last-child) {
-  flex-basis: calc(100% / 4 - 10px);
+  margin-right: 10px;
 }
 
 /* постоянные клиенты */
@@ -463,6 +477,15 @@ body {
 }
 
 .clients-list {
+  width: 106px;
+  height: 60px;
+}
+
+.clients-svg-bg .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   cursor: pointer;
   width: 170px;
   height: 91px;
@@ -471,8 +494,8 @@ body {
   border: 1px solid var(--box-svg);
 }
 
-.clients-list:hover,
-.clients-list:focus {
+.clients-svg-bg .link:hover,
+.clients-svg-bg .link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -487,6 +510,10 @@ body {
 
 .footer .container {
   display: flex;
+}
+
+.footer-box:not(:last-child) {
+  margin-right: 70px;
 }
 
 .footer-contact .item:not(:last-child) {
@@ -541,11 +568,11 @@ body {
   color: var(--primary-white-color);
 }
 
-.footer-svg {
-  margin-left: 10px;
+.footer-svg-bg {
   display: flex;
-  padding: 0;
-  margin: 0;
+  align-items: center;
+  justify-content: center;
+
   cursor: pointer;
   width: 44px;
   height: 44px;
@@ -553,8 +580,17 @@ body {
   border-radius: 50%;
 }
 
-.footer-svg:hover,
-.footer-svg:focus {
+.footer-join-list + .footer-join-list {
+  margin-left: 10px;
+}
+
+.footer-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-svg-bg:hover,
+.footer-svg-bg:focus {
   background-color: var(--accent-color);
 }
 
@@ -563,24 +599,10 @@ body {
   flex-wrap: wrap;
 
   width: 270px;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-join-list {
-  flex-basis: calc(100% / 4);
-  margin-top: 20px;
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .footer-join-svg {
   fill: var(--primary-white-color);
   width: 20px;
   height: 20px;
-}
-
-.footer-box {
-  width: 300px;
 }

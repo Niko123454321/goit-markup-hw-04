@@ -28,14 +28,14 @@
                 </ul>
             </nav>
             <ul class="contact list">
-                <li class="item"><svg class="envelope ictions">
-                        <use href="./images/icons.svg/symbol-defs.svg#icon-envelope-1">
-                        </use>
-                    </svg><a href="mailto:info@example.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><svg class="smartphone">
-                        <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone">
-                        </use>
-                    </svg><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li class="item"><a href="mailto:info@example.com" class="link"><svg class="envelope">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-envelope-1">
+                            </use>
+                        </svg>info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="link"><svg class="smartphone">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone">
+                            </use>
+                        </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -55,43 +55,47 @@
                 <h2 class="hidden">особенности</h2>
                 <ul class="card-set-list list">
                     <li class="features-item">
-                        <svg class="feachers-svg-bg">
-                            <use href="./images/icons.svg/symbol-defs.svg#icon-antenna" class="feachers-svg" width="70"
-                                height="70" <rect x="100" y="25" />>
+                        <div class="features-svg-bg">
+                            <svg class="feachers-svg">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-antenna">
 
-                            </use>
-                        </svg>
+                                </use>
+                            </svg>
+                        </div>
                         <h3 class="title">Внимание к деталям</h3>
                         <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
                     <li class="features-item">
-                        <svg class="feachers-svg-bg">
-                            <use href="./images/icons.svg/symbol-defs.svg#icon-clock" class="feachers-svg" width="70"
-                                height="70" <rect x="100" y="25" />></use>
-                        </svg>
+                        <div class="features-svg-bg">
+                            <svg class="feachers-svg">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="title">Пунктуальность</h3>
                         <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за
                             собой.
                         </p>
                     </li>
                     <li class="features-item">
-                        <svg class="feachers-svg-bg">
-                            <use href="./images/icons.svg/symbol-defs.svg#icon-diagram" class="feachers-svg" width="70"
-                                height="70" <rect x="100" y="25" />>
+                        <div class="features-svg-bg">
+                            <svg class="feachers-svg">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-diagram">
 
-                            </use>
-                        </svg>
+                                </use>
+                            </svg>
+                        </div>
                         <h3 class="title">Планирование</h3>
                         <p class="text">Равным образом консультация с широким активом в значительной степени
                             обуславливает.
                         </p>
                     </li>
                     <li class="features-item">
-                        <svg class="feachers-svg-bg">
-                            <use href="./images/icons.svg/symbol-defs.svg#icon-astronaut" class="feachers-svg"
-                                width="70" height="70" <rect x="100" y="25" />> </use>
-                        </svg>
+                        <div class="features-svg-bg">
+                            <svg class="feachers-svg">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-astronaut"> </use>
+                            </svg>
+                        </div>
                         <h3 class="title">Современные технологии</h3>
                         <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -129,22 +133,30 @@
                         <h3 class="master">Игорь Демьяненко</h3>
                         <p lang="en" class="desc">Product Designer</p>
                         <ul class="box-join list">
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-instagram" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-twitter" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-facebook" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg></a></div>
+                            </li>
                         </ul>
                     </li>
                     <li class="box-item">
@@ -152,22 +164,30 @@
                         <h3 class="master">Ольга Репина</h3>
                         <p lang="en" class="desc">Frontend Developer</p>
                         <ul class="box-join list">
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-instagram" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-twitter" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-facebook" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg></a></div>
+                            </li>
                         </ul>
                     </li>
                     <li class="box-item">
@@ -175,22 +195,30 @@
                         <h3 class="master">Николай Тарасов</h3>
                         <p lang="en" class="desc">Marketing</p>
                         <ul class="box-join list">
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-instagram" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-twitter" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-facebook" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg></a></div>
+                            </li>
                         </ul>
                     </li>
                     <li class="box-item">
@@ -198,67 +226,91 @@
                         <h3 class="master">Михаил Ермаков</h3>
                         <p lang="en" class="desc">UI Designer</p>
                         <ul class="box-join list">
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-instagram" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-twitter" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-facebook" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
-                            <li class="box-join-list"><svg class="box-svg">
-                                    <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin" width="20" height="20"
-                                        class="box-join-svg" <rect x="12" y="12" />></use>
-                                </svg></li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
+                                        </svg></a></div>
+                            </li>
+                            <li class="box-join-list">
+                                <div class="box-join-bg"><a href="" target="blank" rel="" class="link"><svg
+                                            class="box-svg">
+                                            <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg></a></div>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </section>
 
-    <!--постоянные клиенты-->
-        
+        <!--постоянные клиенты-->
+
         <section class="container section">
-<h2  class="box-caption">Постоянные клиенты</h2>
-<ul class="list clients">
-<li class="item">
-    <svg class="clients-list">
-        <use href="./images/icons.svg/symbol-defs.svg#icon-group-1" width="106" height="60"  <rect x="32" y="16" />>
-            
-        </use>
-    </svg>
-</li>
-<li class="item"><svg class="clients-list">
-    <use href="./images/icons.svg/symbol-defs.svg#icon-group-2" width="106" height="60"<rect x="32" y="16" />>
+            <h2 class="box-caption">Постоянные клиенты</h2>
+            <ul class="list clients">
+                <li class="item">
+                    <div class="clients-svg-bg"><a href="" target="blank" rel="" class="link">
+                            <svg class="clients-list">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-group-1">
 
-    </use>
-</svg></li>
-<li class="item"><svg class="clients-list">
-    <use href="./images/icons.svg/symbol-defs.svg#icon-group-3" width="106" height="60"<rect x="32" y="16" />>
+                                </use>
+                            </svg></a></div>
+                </li>
+                <li class="item">
+                    <div class="clients-svg-bg"><a href="" target="blank" rel="" class="link">
+                            <svg class="clients-list">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-group-2">
 
-    </use>
-</svg></li>
-<li class="item"><svg class="clients-list">
-    <use href="./images/icons.svg/symbol-defs.svg#icon-group-4" width="106" height="60"<rect x="32" y="16" />>
+                                </use>
+                            </svg></a></div>
+                </li>
+                <li class="item">
+                    <div class="clients-svg-bg"><a href="" target="blank" rel="" class="link">
+                            <svg class="clients-list">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-group-3">
 
-    </use>
-</svg></li>
-<li class="item"><svg class="clients-list">
-    <use href="./images/icons.svg/symbol-defs.svg#icon-group-5" width="106" height="60"<rect x="32" y="16" />>
+                                </use>
+                            </svg></a></div>
+                </li>
+                <li class="item">
+                    <div class="clients-svg-bg"><a href="" target="blank" rel="" class="link">
+                            <svg class="clients-list">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-group-4">
 
-    </use>
-</svg></li>
-<li class="item"><svg class="clients-list">
-    <use href="./images/icons.svg/symbol-defs.svg#icon-group-6" width="106" height="60"<rect x="32" y="16" />>
+                                </use>
+                            </svg></a></div>
+                </li>
+                <li class="item">
+                    <div class="clients-svg-bg"><a href="" target="blank" rel="" class="link">
+                            <svg class="clients-list">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-group-5">
 
-    </use>
-</svg></li>
+                                </use>
+                            </svg></a></div>
+                </li>
+                <li class="item">
+                    <div class="clients-svg-bg"><a href="" target="blank" rel="" class="link">
+                            <svg class="clients-list">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-group-6">
 
-</ul>
+                                </use>
+                            </svg></a></div>
+                </li>
+
+            </ul>
         </section>
     </main>
 
@@ -284,23 +336,31 @@
             </div>
             <div class="footer-box">
                 <h2 class="footer-text">присоедняйтесь</h2>
-                <ul class="footer-join  footer-card-set">
-                    <li class="footer-join-list"><svg class="footer-svg">
-                            <use href="./images/icons.svg/symbol-defs.svg#icon-instagram" width="20" height="20"
-                                class="footer-join-svg" <rect x="12" y="12" />></use>
-                        </svg></li>
-                    <li class="footer-join-list"><svg class="footer-svg">
-                            <use href="./images/icons.svg/symbol-defs.svg#icon-twitter" width="20" height="20"
-                                class="footer-join-svg" <rect x="12" y="12" />></use>
-                        </svg></li>
-                    <li class="footer-join-list"><svg class="footer-svg">
-                            <use href="./images/icons.svg/symbol-defs.svg#icon-facebook" width="20" height="20"
-                                class="footer-join-svg" <rect x="12" y="12" />></use>
-                        </svg></li>
-                    <li class="footer-join-list"><svg class="footer-svg">
-                            <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin" width="20" height="20"
-                                class="footer-join-svg" <rect x="12" y="12" />></use>
-                        </svg></li>
+                <ul class="footer-join list">
+                    <li class="footer-join-list">
+                        <div class="footer-svg-bg"><svg class="footer-svg">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-instagram" width="20" height="20"
+                                    class="footer-join-svg"></use>
+                            </svg></div>
+                    </li>
+                    <li class="footer-join-list">
+                        <div class="footer-svg-bg"><svg class="footer-svg">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-twitter" width="20" height="20"
+                                    class="footer-join-svg"></use>
+                            </svg></div>
+                    </li>
+                    <li class="footer-join-list">
+                        <div class="footer-svg-bg"><svg class="footer-svg">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-facebook" width="20" height="20"
+                                    class="footer-join-svg"></use>
+                            </svg></div>
+                    </li>
+                    <li class="footer-join-list">
+                        <div class="footer-svg-bg"><svg class="footer-svg">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin" width="20" height="20"
+                                    class="footer-join-svg"></use>
+                            </svg></div>
+                    </li>
                 </ul>
             </div>
         </div>
