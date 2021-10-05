@@ -278,8 +278,13 @@ body {
   margin-left: 30px;
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-item .link {
+  display: block;
+  outline: none;
+}
+
+.project-item .link:hover,
+.project-item .link:focus {
   box-shadow: var(--project-shadow);
 }
 
@@ -318,17 +323,14 @@ body {
   margin-top: 30px;
 }
 
-.features-item .title {
-  margin-top: 30px;
-}
-
 .features-svg-bg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
   background-color: var(--box-buck-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .feachers-svg {
@@ -481,7 +483,7 @@ body {
   height: 60px;
 }
 
-.clients-svg-bg .link {
+.clients-svg-bg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -494,8 +496,8 @@ body {
   border: 1px solid var(--box-svg);
 }
 
-.clients-svg-bg .link:hover,
-.clients-svg-bg .link:focus {
+.clients-svg-bg:hover,
+.clients-svg-bg:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -510,6 +512,7 @@ body {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-box:not(:last-child) {
@@ -566,6 +569,7 @@ body {
   line-height: 16px;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 
 .footer-svg-bg {
